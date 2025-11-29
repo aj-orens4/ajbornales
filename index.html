@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        .header {
+            width: 100%;
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header a {
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .header a:hover {
+            color: #0078ff;
+        }
+
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        /* HOME */
+        .profile img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile h2 {
+            margin-top: 8px;
+            font-size: 30px;
+        }
+
+        .profile p {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: white;
+            width: 200px;
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* SKILLS */
+        .skills-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skills-box span {
+            background: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">AJ'S WEBPAGE</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="section home">
+        <div class="profile">
+            <img src="aj.jpeg" alt="Profile">
+            <h2>Aj Bornales</h2>
+            <p>I am a BSIT student with little interest in programming, mapagpanggap lang.</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Skills</h3>
+                <p>HTML, CSS, JavaScript, C++</p>
+            </div>
+            <div class="card">
+                <h3>Year</h3>
+                <p>2nd Year BSIT</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am Aj Bornales, an Information Technology student, second year this year,
+        who enjoys exploring new stuff, building connections, and more 🙂.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-box">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C++</span>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>ajbornales4@gmail.com</p>
+    </section>
+
+</body>
+</html>
